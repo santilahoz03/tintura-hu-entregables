@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Gyógynövény Termesztési Mesterkurzus — OTO2</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#FAF7EF;--dark:#0C2B1C;--med:#14532D;--green:#177A40;--amber:#F28C1B;--ink:#1C1917;--muted:#5A5244;--line:#DDD5C5}
+html,body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.75}
+.cover{background:var(--dark);color:#FAF7EF;padding:60px 24px;text-align:center}
+.cover h1{font-size:clamp(20px,5vw,34px);line-height:1.25;margin-bottom:12px}
+.cover .sub{font-size:16px;color:#A5D6A7;font-style:italic;margin-bottom:20px}
+.cover .badge{display:inline-block;background:var(--amber);color:#fff;font-size:14px;font-weight:700;padding:6px 18px;border-radius:99px}
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h2{font-size:22px;color:var(--dark);border-bottom:2px solid var(--amber);padding-bottom:8px;margin:40px 0 20px}
+h3{font-size:18px;color:var(--green);margin:28px 0 10px}
+p{margin-bottom:14px}
+ul,ol{padding-left:22px;margin-bottom:14px}
+li{margin-bottom:6px}
+.intro-box{background:var(--dark);color:#FAF7EF;border-radius:12px;padding:24px;margin:28px 0}
+.intro-box p{color:#D4E9D4}
+.herb-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:28px}
+.herb-card h3{margin-top:0;font-size:20px}
+.herb-latin{font-style:italic;font-size:14px;color:var(--muted);margin-bottom:12px}
+.herb-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.herb-item{background:var(--bg);border-left:3px solid var(--green);padding:8px 12px;font-size:15px}
+.herb-item strong{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.difficulty{display:inline-block;padding:3px 10px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:14px}
+.diff-easy{background:#D4EDDA;color:#155724}
+.diff-med{background:#FFF3CD;color:#856404}
+.diff-hard{background:#F8D7DA;color:#721C24}
+.harvest-tag{background:var(--amber);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;display:inline-block;margin-top:8px}
+.warning{background:#FFF3CD;border-left:4px solid #F59E0B;padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:14px;color:#78350F}
+.tip-box{background:#EDF7ED;border-left:4px solid var(--green);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+th{background:var(--dark);color:#fff;padding:10px 12px;text-align:left}
+td{padding:9px 12px;border-bottom:1px solid var(--line)}
+tr:nth-child(even) td{background:#F5F0E8}
+.footer{background:var(--dark);color:#A5D6A7;text-align:center;padding:28px;font-size:14px;margin-top:60px;border-radius:12px}
+@media(max-width:520px){.cover{padding:40px 16px}.wrap{padding:24px 16px 60px}.herb-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Gyógynövény Termesztési Mesterkurzus</h1>
+  <div class="sub">25 Gyógynövény — Ültetéstől a Tinktúráig</div>
+  <div class="badge">🌱 Saját Kert, Végtelen Gyógyszer</div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-box">
+    <p>Ebben a mesterkurzusban megtanulod a 25 legfontosabb tinktúra-alapanyag termesztését saját kertedben, erkélyeden vagy ablakpárkányodon. Minden növénynél szerepel az igény, az ültetési idő, a betakarítás optimális pillanata és a tinktúra-előkészítési tipp.</p>
+  </div>
+
+  <h2>🌿 A Termesztés Előnyei</h2>
+  <p>Saját termesztéssel pontosan tudod, mi kerül a tinktúrádba: nem volt vegyszerezés, nem volt mesterséges szárítás, nincs ismeretlen szállítási lánc. Az ár is töredéke a boltinak — egy jól berendezett gyógynövénykert évente 50–80 ezer forintnyi tinktúra-alapanyagot termel.</p>
+
+  <div class="tip-box">
+    <strong>Általános aranyszabály:</strong> A legtöbb gyógynövény szereti a napsütést, a jó vízelvezető talajt és a túlöntözés mellőzését. Ha bizonytalan vagy, inkább kevesebbet öntözz.
+  </div>
+
+  <h2>🌱 Kezdőknek Ajánlott (Könnyű) Növények</h2>
+
+  <!-- 1 -->
+  <div class="herb-card">
+    <h3>1. Citromfű</h3>
+    <p class="herb-latin">Melissa officinalis</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap vagy félárnyék</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, jól vízelvezető</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten, szárazságtűrő</div>
+      <div class="herb-item"><strong>Hely</strong>Szabadban, cserépben is</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Március–április (magból) vagy május után (csemetéből). Évelő, 3–4 évente osztd szét.</p>
+    <p><strong>Betakarítás:</strong> Virágzás előtt, júniusban — akkor a legmagasabb az illóolaj-tartalom. Egyszerre a hajtás 1/3-át szedd le.</p>
+    <p><strong>Szárítás:</strong> Kötegekben, 30–35°C-on, árnyékban, 1–2 hétig. Az illat szárítás közben csökken — ez normális.</p>
+    <p><strong>Tinktúra-tipp:</strong> Friss növénnyel jobb eredmény érhető el, mint szárítottal. 60% alkohollal 4 hétig macerál.</p>
+    <span class="harvest-tag">Betakarítás: Június</span>
+  </div>
+
+  <!-- 2 -->
+  <div class="herb-card">
+    <h3>2. Kamilla</h3>
+    <p class="herb-latin">Matricaria chamomilla</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Homokos, szegény — nem kell komposztálni!</div>
+      <div class="herb-item"><strong>Öntözés</strong>Ritkán, szárazságtűrő</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban, nem cserépben</div>
+    </div>
+    <p><strong>Mikor vesd:</strong> Március–április közvetlenül a talajba. Önmaga bevetné magát — hagyd, és évente visszatér.</p>
+    <p><strong>Betakarítás:</strong> Amikor a virágszirmok éppen teljesen kinyíltak, de még nem hajlanak vissza. Naponta kell szedni a virágzás csúcsán (május–június).</p>
+    <p><strong>Szárítás:</strong> Egyrétegben, 35°C alatt, legalább 2 hétig. A szárított virág arany-sárga legyen, nem barna.</p>
+    <p><strong>Tinktúra-tipp:</strong> 1:5 arányban, 70% alkohollal. Illata az infúzionál intenzívebb.</p>
+    <span class="harvest-tag">Betakarítás: Május–Június</span>
+  </div>
+
+  <!-- 3 -->
+  <div class="herb-card">
+    <h3>3. Zsálya</h3>
+    <p class="herb-latin">Salvia officinalis</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap, minél több annál jobb</div>
+      <div class="herb-item"><strong>Talaj</strong>Száraz, meszes, homokos</div>
+      <div class="herb-item"><strong>Öntözés</strong>Ritkán — a túlöntözés öli meg</div>
+      <div class="herb-item"><strong>Hely</strong>Szabadban vagy nagy cserépben</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május–június után (fagytól fél). Évelő, 4–5 évig termel jól.</p>
+    <p><strong>Betakarítás:</strong> Virágzás előtt (május–június) — a levelek tartalmazzák a hatóanyagokat, nem a virágok. Metszd vissza évente, hogy ne fásodjon el.</p>
+    <p><strong>Szárítás:</strong> Levél-kötegekben, 35°C, árnyék. 2–3 hét alatt kész.</p>
+    <p><strong>Tinktúra-tipp:</strong> 70% alkohol, 4 hét maceráció. Erős illat és íz — normális.</p>
+    <span class="harvest-tag">Betakarítás: Május–Június</span>
+  </div>
+
+  <!-- 4 -->
+  <div class="herb-card">
+    <h3>4. Kakukkfű</h3>
+    <p class="herb-latin">Thymus vulgaris</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Homokos, szegény, száraz</div>
+      <div class="herb-item"><strong>Öntözés</strong>Nagyon ritkán</div>
+      <div class="herb-item"><strong>Hely</strong>Erkélyen is kiválóan nő</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május–június. Télen szabad földbe visszatér, cserépben beviheted.</p>
+    <p><strong>Betakarítás:</strong> Egész évben szedhető, de legjobb virágzás előtt (május–július). A virágzó hajtáscsúcsok a leghatékonyabbak.</p>
+    <p><strong>Szárítás:</strong> Egész szárral, kötegekben, árnyékban 2 hétig.</p>
+    <p><strong>Tinktúra-tipp:</strong> Frissen vagy szárítottan egyaránt. 60% alkohol, 4 hét.</p>
+    <span class="harvest-tag">Betakarítás: Május–Október</span>
+  </div>
+
+  <!-- 5 -->
+  <div class="herb-card">
+    <h3>5. Levendula</h3>
+    <p class="herb-latin">Lavandula angustifolia</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap, legalább 6 óra naponta</div>
+      <div class="herb-item"><strong>Talaj</strong>Meszes, lúgos, száraz</div>
+      <div class="herb-item"><strong>Öntözés</strong>Nagyon ritkán, aszályban sem baj</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban vagy nagy cserépben</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május után. Évelő, 10+ évig él jó körülmények között.</p>
+    <p><strong>Betakarítás:</strong> Mikor a virágok 50%-a kinyílt (június–július). A kocsányokkal együtt vágd le, ne csak a virágfejeket.</p>
+    <p><strong>Szárítás:</strong> Kötegekben, fejjel lefelé, árnyékban, 2–3 hétig.</p>
+    <p><strong>Tinktúra-tipp:</strong> 60% alkohol, 4–6 hét. Gyönyörű lila szín.</p>
+    <span class="harvest-tag">Betakarítás: Június–Július</span>
+  </div>
+
+  <!-- 6 -->
+  <div class="herb-card">
+    <h3>6. Pitypang</h3>
+    <p class="herb-latin">Taraxacum officinale</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető (önmaga is nő)</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Bármilyen</div>
+      <div class="herb-item"><strong>Talaj</strong>Bármilyen — gyom, mindenütt nő</div>
+      <div class="herb-item"><strong>Öntözés</strong>Felesleges</div>
+      <div class="herb-item"><strong>Hely</strong>Réten, kertben szabadon nő</div>
+    </div>
+    <p><strong>Termesztés helyett:</strong> Gyűjtsd a forgalmas utaktól és permetezéstől mentes területekről. Március–április a legjobb gyökér, május–június a legjobb levél időszak.</p>
+    <p><strong>Betakarítás (gyökér):</strong> Tavasszal (március–április) vagy ősszel (október–november). Az élelmiszer-kapanyővel ássd ki mélyen — a gyökér 20–30 cm mély lehet.</p>
+    <p><strong>Szárítás (gyökér):</strong> Feldarabolva, 40°C-on, legalább 1 hétig.</p>
+    <p><strong>Tinktúra-tipp:</strong> Gyökérből 50% alkohol, 6 hét. Keserű íz — normális, ez a hatóanyag.</p>
+    <span class="harvest-tag">Gyökér: Március vagy Október</span>
+  </div>
+
+  <h2>🌿 Közepes Nehézségű Növények</h2>
+
+  <!-- 7 -->
+  <div class="herb-card">
+    <h3>7. Orbáncfű</h3>
+    <p class="herb-latin">Hypericum perforatum</p>
+    <span class="difficulty diff-med">Közepes nehézség</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap — kötelező!</div>
+      <div class="herb-item"><strong>Talaj</strong>Száraz, sovány, meszes</div>
+      <div class="herb-item"><strong>Öntözés</strong>Ritkán</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban, nem cserépben</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Magból, korán tavasszal. Lassú csírázó — 3–4 hétig is eltarthat. Évelő, 2–3. évtől termel rendesen.</p>
+    <p><strong>Betakarítás:</strong> Pontosan virágzás elején (június), amikor a virágok éppen kinyíltak és a bimbók még zártak. A virágzó hajtáscsúcsot szedd le.</p>
+    <p><strong>Teszt:</strong> Nyomd meg az ujjaiddal a friss virágot — ha lila festéket ad, az a hipericin jó jele.</p>
+    <p><strong>Szárítás:</strong> Gyorsan, 35–40°C, árnyékban. Lassú szárításnál sötétedik és veszít hatóanyagból.</p>
+    <p><strong>Tinktúra-tipp:</strong> FRISS virágból, 60% alkohol, napfényes helyen 4 hét — gyönyörű rubinvörös szín a cél.</p>
+    <div class="warning">⚠️ Orbáncfű interakciók: antidepresszánsokkal, vérhígítókkal, fogamzásgátlókkal nem kombinálható!</div>
+    <span class="harvest-tag">Betakarítás: Június (csak ekkor!)</span>
+  </div>
+
+  <!-- 8 -->
+  <div class="herb-card">
+    <h3>8. Echinacea (Kasvirág)</h3>
+    <p class="herb-latin">Echinacea purpurea / angustifolia</p>
+    <span class="difficulty diff-med">Közepes nehézség</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, jól vízelvezető</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban, szép dísznövény is</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május után. Az első évben gyökeret ereszt, a 2–3. évtől virágzik és termel jól. Évelő.</p>
+    <p><strong>Betakarítás (gyökér):</strong> 3–4 éves növényből, ősszel. Ez a legerősebb rész tinktúrához.</p>
+    <p><strong>Betakarítás (virág+hajtás):</strong> Virágzáskor (július–szeptember) — gyengébb hatás, de könnyebb betakarítani.</p>
+    <p><strong>Szárítás:</strong> Gyökér darabokban, 40°C-on, 1–2 hét.</p>
+    <p><strong>Tinktúra-tipp:</strong> Gyökérből 60% alkohol, 6–8 hét. Enyhén zsibbasztó íz — ez jelzi a minőséget.</p>
+    <span class="harvest-tag">Gyökér: Október (3–4 éves növény)</span>
+  </div>
+
+  <!-- 9 -->
+  <div class="herb-card">
+    <h3>9. Mariatövis</h3>
+    <p class="herb-latin">Silybum marianum</p>
+    <span class="difficulty diff-med">Közepes nehézség</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Száraz, homokos — nem gazdag</div>
+      <div class="herb-item"><strong>Öntözés</strong>Ritkán, szárazságtűrő</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban — nagy növény, helyet igényel!</div>
+    </div>
+    <p><strong>Mikor vesd:</strong> Március–április magból. Kétéves növény: az első évben levélrozettát képez, a másodikban magot terem.</p>
+    <p><strong>Betakarítás (mag):</strong> Szeptember — a magfejek barnulnak és bolyhos "ejtőernyős" magokat engednek. Gyorsan szedd be, mert a szél viszi.</p>
+    <p><strong>Szárítás:</strong> A magokat szórd ki vékony rétegben, szárítsd 2–3 hétig szobahőmérsékleten.</p>
+    <p><strong>Tinktúra-tipp:</strong> Ledarált magból, 60% alkohol, 4–6 hét. A silymarin lassan oldódik ki — türelem kell.</p>
+    <span class="harvest-tag">Betakarítás: Szeptember (mag)</span>
+  </div>
+
+  <!-- 10 -->
+  <div class="herb-card">
+    <h3>10. Ashwagandha (Téli cseresznye)</h3>
+    <p class="herb-latin">Withania somnifera</p>
+    <span class="difficulty diff-med">Közepes nehézség</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Homokos, száraz</div>
+      <div class="herb-item"><strong>Öntözés</strong>Ritkán</div>
+      <div class="herb-item"><strong>Hely</strong>Nagy cserép vagy ágyás — NEM évelő Magyarországon!</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Magból, beltérben február–március, kitelepítés május után (érzékeny a fagyra). Nálunk egyéves növényként kezeld.</p>
+    <p><strong>Betakarítás (gyökér):</strong> Október–november, az első (egyetlen) ősz után. Kisebb gyökér, mint India meleg éghajlatán, de hatékony.</p>
+    <p><strong>Szárítás:</strong> Feldarabolva, 40°C-on, 1 hétig.</p>
+    <p><strong>Tinktúra-tipp:</strong> 60% alkohol, 6–8 hét. Enyhén keserű, fokhagymás illat.</p>
+    <span class="harvest-tag">Betakarítás: Október (gyökér)</span>
+  </div>
+
+  <!-- 11 -->
+  <div class="herb-card">
+    <h3>11. Bodza</h3>
+    <p class="herb-latin">Sambucus nigra</p>
+    <span class="difficulty diff-med">Közepes nehézség (fa, nem egyéves)</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap vagy félárnyék</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, bármilyen</div>
+      <div class="herb-item"><strong>Öntözés</strong>Az első évben rendszeresen, utána ritkán</div>
+      <div class="herb-item"><strong>Hely</strong>Kert — nagy cserje/fa lesz belőle</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből vagy dugványból tavasszal. A 2–3. évtől virágzik és termést hoz.</p>
+    <p><strong>Betakarítás (virág):</strong> Május–június, amikor a fehér virágzat teljesen kinyílt, de még nem hullik. Az egész virágzatot szedd le.</p>
+    <p><strong>Betakarítás (bogyó):</strong> Szeptember–október, amikor teljesen megérett és sötétlila. NYERS FOGYASZTÁSA TILOS!</p>
+    <p><strong>Szárítás (virág):</strong> Egész virágzatban, 35°C, árnyékban, 1–2 hét.</p>
+    <p><strong>Tinktúra-tipp (bogyó):</strong> 50% alkohol, 4 hét — csak érett bogyóból!</p>
+    <div class="warning">⚠️ Nyers bodza bogyó mérgező! Csak érettet, tinktúrához alkohollal.</div>
+    <span class="harvest-tag">Virág: Május | Bogyó: Szeptember</span>
+  </div>
+
+  <!-- 12 -->
+  <div class="herb-card">
+    <h3>12. Menta</h3>
+    <p class="herb-latin">Mentha × piperita</p>
+    <span class="difficulty diff-med">Közepes (terjeszkedik!)</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Félárnyék vagy nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, nedves</div>
+      <div class="herb-item"><strong>Öntözés</strong>Rendszeresen</div>
+      <div class="herb-item"><strong>Hely</strong>CSERÉPBEN! Szabadban elnyomja a többi növényt</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május után. Erős terjeszkedő — cserépben tartsd, vagy ágyásban mélyítsd el a korlátot.</p>
+    <p><strong>Betakarítás:</strong> Virágzás előtt (június–július) a leghatékonyabb. Egész évben szedhető kisebb mennyiségben.</p>
+    <p><strong>Szárítás:</strong> Kötegekben, 30–35°C, árnyékban, 1–2 hét. Az illat szárítás után is megmarad.</p>
+    <p><strong>Tinktúra-tipp:</strong> 60% alkohol, 4 hét. Erős mentol — kevés is sokat ér.</p>
+    <span class="harvest-tag">Betakarítás: Június–Október</span>
+  </div>
+
+  <!-- 13 -->
+  <div class="herb-card">
+    <h3>13. Gyömbér</h3>
+    <p class="herb-latin">Zingiber officinale</p>
+    <span class="difficulty diff-med">Közepes (trópusi növény, nálunk cserépben)</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Szórt fény, nem direkt nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, jól vízelvezető</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten</div>
+      <div class="herb-item"><strong>Hely</strong>Nagy cserép beltérben</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Március–április, boltban vásárolt rizómából (rügyös darabot). Meleg helyen tárold és öntözd mérsékelten.</p>
+    <p><strong>Betakarítás:</strong> Szeptember–október, amikor a levelek barnulni kezdenek. Az egész rizómát ásd ki.</p>
+    <p><strong>Szárítás:</strong> Szeletekre vágva, 40°C-on, 1–2 hét.</p>
+    <p><strong>Tinktúra-tipp:</strong> Friss gyömbérből a legjobb: 60% alkohol, 4 hét. Csípős, fűszeres.</p>
+    <span class="harvest-tag">Betakarítás: Szeptember–Október</span>
+  </div>
+
+  <!-- 14 -->
+  <div class="herb-card">
+    <h3>14. Bojtorján</h3>
+    <p class="herb-latin">Arctium lappa</p>
+    <span class="difficulty diff-med">Közepes — nagy növény</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Nap vagy félárnyék</div>
+      <div class="herb-item"><strong>Talaj</strong>Mély, humuszos</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten</div>
+      <div class="herb-item"><strong>Hely</strong>Nagy ágyás — a gyökér 1 m mélyre nő!</div>
+    </div>
+    <p><strong>Mikor vesd:</strong> Március–április magból. Kétéves növény: az első évben gyökeret ereszt, a másodikban termést hoz.</p>
+    <p><strong>Betakarítás (gyökér):</strong> Az első ősz után (október), mielőtt megkeményedne. Mélyen kell ásni!</p>
+    <p><strong>Szárítás:</strong> Szeletekre vágva, 40°C-on, 1 hétig.</p>
+    <p><strong>Tinktúra-tipp:</strong> 50% alkohol, 6 hét.</p>
+    <span class="harvest-tag">Gyökér: Október (első ősz)</span>
+  </div>
+
+  <!-- 15 -->
+  <div class="herb-card">
+    <h3>15. Fokhagyma</h3>
+    <p class="herb-latin">Allium sativum</p>
+    <span class="difficulty diff-easy">Könnyen termeszthető</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Teljes nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, jól vízelvezető</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten, betakarítás előtt csökkentsd</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban, zöldségkertben</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Szeptember–október (őszi fokhagyma) vagy március (tavaszi, kisebb hagyma). Gerezdenként ültesd, hegyével felfelé, 5 cm mélyen.</p>
+    <p><strong>Betakarítás:</strong> Június–július, amikor a levelek fele elsárgul. Száraz időben szedd ki.</p>
+    <p><strong>Szárítás:</strong> Száraz, szellős helyen, 2–4 hétig fejjel lefelé akasztva.</p>
+    <p><strong>Tinktúra-tipp:</strong> Friss fokhagyma, 60% alkohol, 4 hét. Erős illat — légmentesen zárd!</p>
+    <span class="harvest-tag">Betakarítás: Június–Július</span>
+  </div>
+
+  <h2>🌿 Haladó Növények</h2>
+
+  <!-- 16 -->
+  <div class="herb-card">
+    <h3>16. Kurkuma</h3>
+    <p class="herb-latin">Curcuma longa</p>
+    <span class="difficulty diff-hard">Haladó — trópusi növény</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Szórt, intenzív beltéri fény</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, jól vízelvezető</div>
+      <div class="herb-item"><strong>Öntözés</strong>Rendszeresen, de ne álljon vízben</div>
+      <div class="herb-item"><strong>Hely</strong>Nagy cserép beltérben, min. 20°C</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Március–április, boltból vásárolt rizómából. Meleg, párás körülmény szükséges.</p>
+    <p><strong>Betakarítás:</strong> Szeptember–október, amikor a levelek barnulnak. A rizómák kisebb méretűek, mint a trópusi változaté — de hatékonyak.</p>
+    <p><strong>Szárítás:</strong> Szeletekre vágva, 40°C-on. Figyelj: mindent sárgára fest!</p>
+    <p><strong>Tinktúra-tipp:</strong> 60% alkohol + egy csipet fekete bors (piperine) a jobb felszívódásért, 6 hét.</p>
+    <span class="harvest-tag">Betakarítás: Szeptember–Október</span>
+  </div>
+
+  <!-- 17 -->
+  <div class="herb-card">
+    <h3>17. Macskagyökér (Valeriána)</h3>
+    <p class="herb-latin">Valeriana officinalis</p>
+    <span class="difficulty diff-hard">Haladó</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Félárnyék vagy nap</div>
+      <div class="herb-item"><strong>Talaj</strong>Nedves, mély, humuszos</div>
+      <div class="herb-item"><strong>Öntözés</strong>Rendszeresen</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban — 1–1,5 m magasra nő!</div>
+    </div>
+    <p><strong>Mikor ültesd:</strong> Csemetéből május után. Az első évben gyökeret ereszt, a 2. évtől virágzik. Évelő.</p>
+    <p><strong>Betakarítás (gyökér):</strong> Ősszel (október), 2–3 éves növényből. Az idős gyökér a legerősebb.</p>
+    <p><strong>Szárítás:</strong> Szárítva intenzív illat keletkezik — a macskák imádják. Szellős helyen tárold.</p>
+    <p><strong>Tinktúra-tipp:</strong> 60% alkohol, 6–8 hét. Erős hatás — pontos dózis fontos.</p>
+    <span class="harvest-tag">Gyökér: Október (2–3 éves növény)</span>
+  </div>
+
+  <!-- 18 -->
+  <div class="herb-card">
+    <h3>18. Vérehulló fű</h3>
+    <p class="herb-latin">Chelidonium majus</p>
+    <span class="difficulty diff-hard">HALADÓ — mérgező növény</span>
+    <div class="herb-grid">
+      <div class="herb-item"><strong>Fény</strong>Félárnyék</div>
+      <div class="herb-item"><strong>Talaj</strong>Humuszos, nedves</div>
+      <div class="herb-item"><strong>Öntözés</strong>Mérsékelten</div>
+      <div class="herb-item"><strong>Hely</strong>Ágyásban</div>
+    </div>
+    <p><strong>Mikor vesd:</strong> Ősszel közvetlenül a talajba — hideg csíráztatást igényel. Kétéves, de önmaga visszaveti.</p>
+    <p><strong>Betakarítás:</strong> Virágzás elején (május–június), az egész növény, gyökér nélkül.</p>
+    <p><strong>Szárítás:</strong> Óvatosan! A narancsszínű tej (latexsap) irritálja a bőrt és a szemet.</p>
+    <p><strong>Tinktúra-tipp:</strong> CSAK orvosi felügyelet alatt! Nagyon alacsony dózis (0,5 ml) — nem kezdőknek.</p>
+    <div class="warning">⚠️ VESZÉLY: A vérehulló fű mérgező növény! Csak tapasztalt felhasználóknak, orvosi konzultáció kötelező.</div>
+    <span class="harvest-tag">Betakarítás: Május–Június (Haladóknak)</span>
+  </div>
+
+  <!-- 19 -->
+  <div class="herb-card">
+    <h3>19. Orbáncfű olaj (Napfényes extrakció)</h3>
+    <p class="herb-latin">Hypericum perforatum — különleges módszer</p>
+    <span class="difficulty diff-hard">Haladó (gondos betakarítást igényel)</span>
+    <p>Az orbáncfű klasszikus olaj-extrakciós módszere különbözik a tinktúrától. Ez az olaj topikálisan (bőrre) alkalmazható, nem belső fogyasztásra.</p>
+    <p><strong>Módszer:</strong> Frissen szedett orbáncfű virágokat töltsd meg egy üvegben, önts rá extra szűz olivaolajat, tedd napos ablakba 4–6 hétre. Az olaj rubinvörösre változik — ez jelzi a hipericin-tartalmat.</p>
+    <p><strong>Felhasználás:</strong> Izomfájdalomra, napégésre, kisebb sebekre — NEM tinktúra, NEM belső fogyasztásra.</p>
+    <span class="harvest-tag">Betakarítás: Június (friss virág)</span>
+  </div>
+
+  <!-- 20+ summary -->
+  <div class="herb-card">
+    <h3>20–25. Egyéb Ajánlott Növények (Összefoglaló)</h3>
+    <table>
+      <tr><th>Növény</th><th>Betakarítás</th><th>Rész</th><th>Nehézség</th></tr>
+      <tr><td>Orvosi ziliz (Althaea officinalis)</td><td>Október</td><td>Gyökér</td><td>Közepes</td></tr>
+      <tr><td>Ánizs (Pimpinella anisum)</td><td>Augusztus–szeptember</td><td>Mag</td><td>Könnyű</td></tr>
+      <tr><td>Vörös lóhere (Trifolium pratense)</td><td>Június–július</td><td>Virág</td><td>Könnyű</td></tr>
+      <tr><td>Hársfavirág (Tilia cordata)</td><td>Június–július</td><td>Virág</td><td>Könnyű (csak gyűjtés)</td></tr>
+      <tr><td>Orvosi angyalgyökér (Angelica archangelica)</td><td>Szeptember</td><td>Gyökér</td><td>Haladó</td></tr>
+      <tr><td>Rebarbara gyökér (Rheum palmatum)</td><td>Október</td><td>Gyökér</td><td>Haladó</td></tr>
+    </table>
+  </div>
+
+  <h2>📅 Termesztési Naptár — Éves Összefoglaló</h2>
+  <table>
+    <tr><th>Hónap</th><th>Mit ültetj / vess</th><th>Mit szedhetsz</th></tr>
+    <tr><td>Március</td><td>Kamilla (mag), citromfű (csíra), ashwagandha (beltér)</td><td>Pitypang gyökér (első)</td></tr>
+    <tr><td>Április</td><td>Mariatövis (mag), bojtorján (mag)</td><td>Pitypang levél és gyökér</td></tr>
+    <tr><td>Május</td><td>Zsálya, kakukkfű, levendula (csemeték)</td><td>Bodza virág, kamilla (eleje)</td></tr>
+    <tr><td>Június</td><td>—</td><td>Orbáncfű (!), zsálya, citromfű, kakukkfű, levendula, fokhagyma</td></tr>
+    <tr><td>Július</td><td>—</td><td>Levendula, menta, kamilla (utolsó)</td></tr>
+    <tr><td>Augusztus</td><td>Őszi fokhagyma (gerezdek)</td><td>Ánizsmag, mariatövis mag (eleje)</td></tr>
+    <tr><td>Szeptember</td><td>—</td><td>Mariatövis mag, bodza bogyó, gyömbér+kurkuma gyökér</td></tr>
+    <tr><td>Október</td><td>—</td><td>Echinacea gyökér, macskagyökér, bojtorján gyökér, ashwagandha, pitypang gyökér (őszi)</td></tr>
+    <tr><td>November–Február</td><td>Tervezés, ültetési eszközök beszerzése</td><td>—</td></tr>
+  </table>
+
+  <div class="tip-box">
+    <strong>Megtérülési becslés:</strong> Egy 10–15 m² gyógynövénykert (5–8 növényfaj) éves szinten kb. 60–80 ezer forint értékű tinktúra-alapanyagot termelhet. A kert kialakítási költsége az első évben megtérül.
+  </div>
+
+  <div class="footer">
+    <p>🌱 Gyógynövény Termesztési Mesterkurzus — OTO2</p>
+    <p style="margin-top:8px;font-size:12px;">Ez az útmutató tájékoztató jellegű. A termesztési részletek hozzáadása és a saját tapasztalat gyűjtése időt vesz igénybe — türelem kell! Következő lépés →</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>30 Napos Gyógyító Protokoll — OTO3</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#FAF7EF;--dark:#0C2B1C;--med:#14532D;--green:#177A40;--amber:#F28C1B;--ink:#1C1917;--muted:#5A5244;--line:#DDD5C5}
+html,body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.75}
+.cover{background:var(--dark);color:#FAF7EF;padding:60px 24px;text-align:center}
+.cover h1{font-size:clamp(20px,5vw,34px);line-height:1.25;margin-bottom:12px}
+.cover .sub{font-size:16px;color:#A5D6A7;font-style:italic;margin-bottom:20px}
+.cover .badge{display:inline-block;background:var(--amber);color:#fff;font-size:14px;font-weight:700;padding:6px 18px;border-radius:99px}
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h2{font-size:22px;color:var(--dark);border-bottom:2px solid var(--amber);padding-bottom:8px;margin:40px 0 20px}
+h3{font-size:18px;color:var(--green);margin:28px 0 10px}
+h4{font-size:16px;color:var(--dark);margin:16px 0 8px;font-weight:700}
+p{margin-bottom:14px}
+ul,ol{padding-left:22px;margin-bottom:14px}
+li{margin-bottom:6px}
+.intro-box{background:var(--dark);color:#FAF7EF;border-radius:12px;padding:24px;margin:28px 0}
+.intro-box p{color:#D4E9D4}
+.warning{background:#FFF3CD;border-left:4px solid #F59E0B;padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:14px;color:#78350F}
+.emergency{background:#FEE2E2;border-left:4px solid #DC2626;padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:15px;color:#7F1D1D}
+.tip-box{background:#EDF7ED;border-left:4px solid var(--green);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0}
+.week-block{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:28px}
+.week-header{background:var(--dark);color:#FAF7EF;padding:10px 18px;border-radius:8px;margin:-24px -24px 20px;font-size:16px;font-weight:700}
+.day-row{display:grid;grid-template-columns:80px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.day-row:last-child{border-bottom:none}
+.day-num{font-weight:700;color:var(--amber);font-size:18px;line-height:1}
+.day-content{}
+.time-slot{font-size:13px;color:var(--muted);font-family:sans-serif}
+.dose-tag{display:inline-block;background:#E8F5E9;color:var(--green);font-size:12px;font-weight:700;font-family:sans-serif;padding:2px 8px;border-radius:4px;margin-right:4px}
+.protocol-card{background:#fff;border-left:4px solid var(--amber);padding:20px 24px;margin-bottom:20px;border-radius:0 10px 10px 0}
+.protocol-card h4{margin-top:0;color:var(--amber)}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+th{background:var(--dark);color:#fff;padding:10px 12px;text-align:left}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#F5F0E8}
+.footer{background:var(--dark);color:#A5D6A7;text-align:center;padding:28px;font-size:14px;margin-top:60px;border-radius:12px}
+@media(max-width:520px){.cover{padding:40px 16px}.wrap{padding:24px 16px 60px}.day-row{grid-template-columns:60px 1fr}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>30 Napos Gyógyító Protokoll</h1>
+  <div class="sub">Napi Tinktúra-Menetrend 4 Célra: Immunerő · Stressz · Emésztés · Méregtelenítés</div>
+  <div class="badge">📅 Strukturált, Mérhető Eredmény</div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-box">
+    <p>Ez a protokoll abban különbözik a "majd veszek belőle ha rosszul vagyok" megközelítéstől, hogy itt konkrét, napra lebontott tervvel dolgozol. 30 nap után mérhető változást tapasztalsz — de ehhez napi következetesség kell. Válaszd ki a célod, kövesd a menetrendet.</p>
+  </div>
+
+  <div class="emergency">
+    🚨 <strong>Mielőtt elkezded:</strong> Ez a protokoll egészséges felnőtteknek szól kiegészítő jelleggel. Terhesség, szoptatás, krónikus betegség, rendszeres gyógyszerszedés esetén konzultálj orvossal a protokoll megkezdése előtt.
+  </div>
+
+  <h2>🎯 Melyik Protokollt Válaszd?</h2>
+
+  <table>
+    <tr><th>Célom</th><th>Protokoll neve</th><th>Fő tinktúrák</th></tr>
+    <tr><td>Immunrendszert erősíteni, betegségeket megelőzni</td><td>A — Immunerő</td><td>Echinacea, Bodza, Fokhagyma</td></tr>
+    <tr><td>Stresszt csökkenteni, jobban aludni</td><td>B — Stressz & Alvás</td><td>Ashwagandha, Citromfű, Macskagyökér</td></tr>
+    <tr><td>Emésztést rendbe hozni, puffadást megszüntetni</td><td>C — Emésztés</td><td>Pitypang, Kamilla, Gyömbér, Menta</td></tr>
+    <tr><td>Általános méregtelenítés tavasszal/ősszel</td><td>D — Méregtelenítés</td><td>Mariatövis, Pitypang, Bojtorján</td></tr>
+  </table>
+
+  <div class="warning">⚠️ Egyszerre csak EGY protokollt végezz. Ha több célod is van, a sorrend ajánlott: D → C → B → A (méregtelenítéssel érdemes kezdeni).</div>
+
+  <h2>📋 Általános Napi Rend (Minden Protokollhoz)</h2>
+
+  <div class="tip-box">
+    <strong>Az időzítés számít:</strong> Az adaptogének (ashwagandha) reggel a leghatékonyabbak. Az emésztési tinktúrák étkezés előtt/után. Az alvástámogató tinktúrák lefekvés előtt 30–45 perccel.
+  </div>
+
+  <table>
+    <tr><th>Időpont</th><th>Mit</th><th>Megjegyzés</th></tr>
+    <tr><td>Reggel 7–8</td><td>Reggeli tinktúra (protokoll-specifikus)</td><td>Étkezés előtt 15–20 perccel, pohár vízzel</td></tr>
+    <tr><td>Déli 12–13</td><td>Déli tinktúra (ha szerepel a protokollban)</td><td>Ebédnél vagy étkezés után</td></tr>
+    <tr><td>Este 20–21</td><td>Esti/lefekvés előtti tinktúra</td><td>Lefekvés előtt 30–45 perccel</td></tr>
+    <tr><td>Egész nap</td><td>Min. 2 liter víz</td><td>Kötelező a méregtelenítésnél és az emésztésnél</td></tr>
+  </table>
+
+  <!-- PROTOKOLL A -->
+  <h2>💪 A Protokoll — Immunerő (30 nap)</h2>
+  <p>Ez a protokoll az immunrendszer hosszú távú megerősítésére szól, nem akut betegségkezelésre. Az echinacea ciklikusan alkalmazandó: 10 nap szedés, 3 nap pihenő, ismétlés.</p>
+
+  <div class="week-block">
+    <div class="week-header">1. hét (1–7. nap) — Alap bevezetés</div>
+    <div class="day-row">
+      <div class="day-num">🌅 Reggel</div>
+      <div class="day-content">
+        <span class="dose-tag">Echinacea 3 ml</span> + <span class="dose-tag">Fokhagyma 1 ml</span>
+        <div class="time-slot">Éhgyomorra, 1 pohár vízzel</div>
+        <p style="margin:6px 0 0;font-size:15px">Az echinacea csíkos, zsibbasztó íze jó jel — ez jelzi a hatóanyagot.</p>
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">🌙 Este</div>
+      <div class="day-content">
+        <span class="dose-tag">Bodza 3 ml</span>
+        <div class="time-slot">Vacsora után, meleg kamillateával</div>
+      </div>
+    </div>
+    <div class="day-content" style="padding-top:12px">
+      <strong>Mit várj:</strong> Az első hétben nincs látványos változás — a tinktúrák lassan épülnek be. Figyelj az energia-szintedre.
+    </div>
+  </div>
+
+  <div class="week-block">
+    <div class="week-header">2. hét (8–14. nap) — Megerősítés</div>
+    <div class="day-row">
+      <div class="day-num">🌅 Reggel</div>
+      <div class="day-content">
+        <span class="dose-tag">Echinacea 4 ml</span> + <span class="dose-tag">Fokhagyma 1 ml</span>
+        <div class="time-slot">Éhgyomorra</div>
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">🌙 Este</div>
+      <div class="day-content">
+        <span class="dose-tag">Bodza 4 ml</span> + <span class="dose-tag">Citromfű 2 ml</span>
+        <div class="time-slot">Este 20:00, meleg itallal</div>
+        <p style="font-size:15px;margin-top:4px">A citromfű hozzáadása csökkenti a stresszt, ami az immunrendszert is erősíti.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-block">
+    <div class="week-header">3. hét (15–21. nap) — Echinacea pihenő (8–10. nap)</div>
+    <p style="font-size:15px;margin:0 0 12px">Az echinacea ciklus szerint: 15–17. nap SZÜNET (echinacea nélkül), 18. naptól újra.</p>
+    <div class="day-row">
+      <div class="day-num">15–17.</div>
+      <div class="day-content">
+        <span class="dose-tag">Fokhagyma 2 ml</span> + <span class="dose-tag">Bodza 4 ml</span> (echinacea nélkül)
+        <div class="time-slot">Reggel fokhagyma, este bodza</div>
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">18–21.</div>
+      <div class="day-content">
+        <span class="dose-tag">Echinacea 4 ml</span> (újrakezd) + <span class="dose-tag">Bodza 4 ml</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-block">
+    <div class="week-header">4. hét (22–30. nap) — Lezárás és fenntartás</div>
+    <div class="day-row">
+      <div class="day-num">22–28.</div>
+      <div class="day-content">
+        <span class="dose-tag">Echinacea 3 ml</span> + <span class="dose-tag">Fokhagyma 1 ml</span> (reggel)<br>
+        <span class="dose-tag">Bodza 3 ml</span> (este)
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">29–30.</div>
+      <div class="day-content">
+        Értékelő napok: Figyelj, hogyan érzed magad az elmúlt hónaphoz képest. Volt-e kevesebb megfázás? Jobb az energiaszinted?
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTOKOLL B -->
+  <h2>🧘 B Protokoll — Stressz & Alvás (30 nap)</h2>
+  <p>Az ashwagandha adaptogén: hatása fokozatosan, 2–4 hét alatt épül fel. Ne várd az azonnali eredményt — a változás lassú, de tartós.</p>
+
+  <div class="protocol-card">
+    <h4>Reggeli rutin (minden nap)</h4>
+    <p><span class="dose-tag">Ashwagandha 3 ml</span> — reggeli étkezéssel együtt (nem éhgyomorra, kicsit nehéz a gyomorra)</p>
+    <p><span class="dose-tag">Citromfű 2 ml</span> — reggeli kávé/tea helyett, vagy mellé (nem koffein, nem stimuláns)</p>
+  </div>
+
+  <div class="protocol-card">
+    <h4>Délutáni megerősítés (1–15. nap)</h4>
+    <p><span class="dose-tag">Citromfű 2 ml</span> — ebéd után, ha stresszes a délutánod</p>
+    <p>A 16–30. napra általában már nincs szükség a déli adagra — az ashwagandha veszi át a szerepet.</p>
+  </div>
+
+  <div class="protocol-card">
+    <h4>Esti/lefekvés előtt (minden nap)</h4>
+    <p><span class="dose-tag">Citromfű 3 ml</span> + <span class="dose-tag">Levendula 2 ml</span> — lefekvés előtt 30 perccel, meleg kamillateával</p>
+    <p><strong>Ha álmatlanság is probléma (1–10. nap):</strong> Az esti adaghoz add hozzá <span class="dose-tag">Macskagyökér 2 ml</span>. Figyelmeztetés: másnap reggel álmos lehetsz — teszteld hétvégén először!</p>
+  </div>
+
+  <table>
+    <tr><th>Időszak</th><th>Mit várj</th></tr>
+    <tr><td>1–7. nap</td><td>Semmi látványos változás — ez normális. Az ashwagandha még épül.</td></tr>
+    <tr><td>8–14. nap</td><td>Az alvás minősége javulhat. Ébredés frissebben.</td></tr>
+    <tr><td>15–21. nap</td><td>Napi stressz-tűrőképesség érezhetően nő. Kisebb dolgok már nem zavarnak annyira.</td></tr>
+    <tr><td>22–30. nap</td><td>Az adaptogén teljesen beépült. Energia-stabilitás nap közben.</td></tr>
+  </table>
+
+  <!-- PROTOKOLL C -->
+  <h2>🫃 C Protokoll — Emésztés (30 nap)</h2>
+  <p>Az emésztési protokoll étkezéshez kötött — az időzítés kulcsfontosságú. Ne feledd: az emésztési problémák mögött sokszor stressz is áll, ezért a B protokollal is kombinálható.</p>
+
+  <div class="protocol-card">
+    <h4>Reggeli étkezés előtt (20 perccel)</h4>
+    <p><span class="dose-tag">Pitypang gyökér 2 ml</span> + <span class="dose-tag">Gyömbér 1 ml</span> — 1 pohár meleg vízzel</p>
+    <p>Ez aktiválja az epeelválasztást és előkészíti az emésztőrendszert.</p>
+  </div>
+
+  <div class="protocol-card">
+    <h4>Ebéd/vacsora után (étkezés közben vagy röviddel utána)</h4>
+    <p><span class="dose-tag">Menta 2 ml</span> — étkezés után 15 perccel, ha puffadás/gázok szoktak lenni</p>
+    <p><span class="dose-tag">Kamilla 3 ml</span> — este vacsora után, ha görcsök szoktak lenni</p>
+  </div>
+
+  <div class="protocol-card">
+    <h4>Este (csak ha székrekedés is probléma)</h4>
+    <p><span class="dose-tag">Pitypang gyökér 3 ml</span> — este 21:00 körül, 2 pohár vízzel. Másnap reggel hatás.</p>
+  </div>
+
+  <div class="tip-box">
+    <strong>Táplálkozási kiegészítés:</strong> A tinktúrák önmagukban nem elegendők, ha az étrend nem megfelelő. Napi 2 liter víz, rostban gazdag élelmiszerek és a tejtermékek csökkentése sokat segíthet mellette.
+  </div>
+
+  <!-- PROTOKOLL D -->
+  <h2>🌿 D Protokoll — Méregtelenítés (30 nap)</h2>
+  <p>A méregtelenítési kúra a máj és a vesék természetes detoxifikáló képességét támogatja. Nem "méregteleníti" a testet mágikusan — a máj ezt egyébként is csinálja, de a tinktúrák ezt a folyamatot támogatják.</p>
+
+  <div class="warning">⚠️ A méregtelenítési protokoll során fokozottan fontos a napi 2–3 liter víz. A toxinok kiürülése a vesén és a bélrendszeren keresztül történik, ehhez bőséges folyadékfelvétel szükséges.</div>
+
+  <div class="week-block">
+    <div class="week-header">1–2. hét — Lassú bevezető</div>
+    <div class="day-row">
+      <div class="day-num">🌅 Reggel</div>
+      <div class="day-content">
+        <span class="dose-tag">Mariatövis 2 ml</span> + <span class="dose-tag">Pitypang gyökér 2 ml</span>
+        <div class="time-slot">Éhgyomorra, meleg vízzel</div>
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">🌙 Este</div>
+      <div class="day-content">
+        <span class="dose-tag">Mariatövis 2 ml</span>
+        <div class="time-slot">Vacsora után</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="week-block">
+    <div class="week-header">3–4. hét — Teljes protokoll</div>
+    <div class="day-row">
+      <div class="day-num">🌅 Reggel</div>
+      <div class="day-content">
+        <span class="dose-tag">Mariatövis 3 ml</span> + <span class="dose-tag">Pitypang gyökér 3 ml</span>
+      </div>
+    </div>
+    <div class="day-row">
+      <div class="day-num">🌙 Este</div>
+      <div class="day-content">
+        <span class="dose-tag">Mariatövis 3 ml</span> + <span class="dose-tag">Bojtorján 2 ml</span>
+        <div class="time-slot">Este — a bojtorján a bőrt és a nyirokrendszert is támogatja</div>
+      </div>
+    </div>
+  </div>
+
+  <table>
+    <tr><th>Lehetséges tünetek (normális!)</th><th>Mit jelent</th></tr>
+    <tr><td>1–5. napon: fejfájás, fáradság</td><td>Méregtelenítési reakció — tüneti, elmúlik</td></tr>
+    <tr><td>Fokozott vizeletürítés</td><td>A vese dolgozik — jó jel</td></tr>
+    <tr><td>Bőr kisebb pattanásai</td><td>Toxinok a bőrön át is kiürülnek — normális</td></tr>
+  </table>
+
+  <h2>📝 Megfigyelési Napló</h2>
+  <p>Naponta töltsd ki (1 percbe kerül):</p>
+
+  <table>
+    <tr><th>Dátum</th><th>Energia (1–10)</th><th>Alvás minősége (1–10)</th><th>Emésztés OK?</th><th>Megjegyzés</th></tr>
+    <tr><td>1. nap</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>7. nap</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>14. nap</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>21. nap</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>30. nap</td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <div class="tip-box">
+    <strong>Mi után:</strong> A 30 napos kúra után 2–4 hetes pihenőt tarts (az adaptogének kivételével, azok folytathatók). Utána újrakezdheted vagy kombinálhatod a protokollokat.
+  </div>
+
+  <div class="footer">
+    <p>📅 30 Napos Gyógyító Protokoll — OTO3</p>
+    <p style="margin-top:8px;font-size:12px;">Ez az útmutató tájékoztató jellegű, nem orvosi előírás. Következő lépés →</p>
+  </div>
+
+</div>
+</body>
+</html>

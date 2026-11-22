@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dózis és Biztonsági Útmutató — OB1</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#FAF7EF;--dark:#0C2B1C;--med:#14532D;--green:#177A40;--amber:#F28C1B;--ink:#1C1917;--muted:#5A5244;--line:#DDD5C5}
+html,body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.75}
+.cover{background:var(--dark);color:#FAF7EF;padding:60px 24px;text-align:center}
+.cover h1{font-size:clamp(20px,5vw,34px);line-height:1.25;margin-bottom:12px}
+.cover .sub{font-size:16px;color:#A5D6A7;font-style:italic;margin-bottom:20px}
+.cover .badge{display:inline-block;background:var(--amber);color:#fff;font-size:14px;font-weight:700;padding:6px 18px;border-radius:99px}
+.wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+h2{font-size:22px;color:var(--dark);border-bottom:2px solid var(--amber);padding-bottom:8px;margin:40px 0 20px}
+h3{font-size:18px;color:var(--green);margin:28px 0 10px}
+p{margin-bottom:14px}
+ul,ol{padding-left:22px;margin-bottom:14px}
+li{margin-bottom:6px}
+.intro-box{background:var(--dark);color:#FAF7EF;border-radius:12px;padding:24px;margin:28px 0}
+.intro-box p{color:#D4E9D4}
+.warning{background:#FFF3CD;border-left:4px solid #F59E0B;padding:12px 16px;border-radius:0 8px 8px 0;margin:16px 0;font-size:14px;color:#78350F}
+.danger{background:#FEE2E2;border-left:4px solid #DC2626;padding:14px 18px;border-radius:0 8px 8px 0;margin:20px 0;font-size:15px;color:#7F1D1D}
+.tip-box{background:#EDF7ED;border-left:4px solid var(--green);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th{background:var(--dark);color:#fff;padding:10px 12px;text-align:left;font-size:13px}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#F5F0E8}
+.safe{color:#14532D;font-weight:700}
+.caution{color:#856404;font-weight:700}
+.danger-cell{color:#721C24;font-weight:700}
+.cat-row td{background:var(--med);color:#fff;font-weight:700;font-size:13px}
+.dose-box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:20px}
+.dose-box h3{margin-top:0}
+.dose-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:12px 0}
+.dose-item{background:var(--bg);border-radius:8px;padding:10px;text-align:center;font-size:14px}
+.dose-item strong{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.dose-item .val{font-size:18px;font-weight:700;color:var(--dark)}
+.footer{background:var(--dark);color:#A5D6A7;text-align:center;padding:28px;font-size:14px;margin-top:60px;border-radius:12px}
+@media(max-width:520px){.cover{padding:40px 16px}.wrap{padding:24px 16px 60px}.dose-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Dózis és Biztonsági Útmutató</h1>
+  <div class="sub">Minden Tinktúra Pontos Adagolása · Kölcsönhatások · Különleges Csoportok</div>
+  <div class="badge">🛡️ Biztonságos Alkalmazás</div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-box">
+    <p>Ez az útmutató a leggyakrabban alkalmazott tinktúrák maximális napi adagjait, a legfontosabb gyógyszer-kölcsönhatásokat és a különleges csoportokra (terhesség, gyerekek, idősek) vonatkozó szabályokat tartalmazza. Mentsd el és olvasd át, mielőtt bármely tinktúrát szedni kezdesz.</p>
+  </div>
+
+  <div class="danger">
+    🚨 <strong>Azonnal hagyj fel a szedéssel és fordulj orvoshoz, ha:</strong> bőrkiütés, légzési nehézség, erős szívdobogás, hirtelen vérnyomásesés vagy súlyos gyomorfájás jelentkezik a tinktúra bevétele után.
+  </div>
+
+  <h2>💊 Pontos Adagolási Táblázat</h2>
+
+  <table>
+    <tr><th>Növény</th><th>Standard adag/adag</th><th>Napi max.</th><th>Kúra hossza</th><th>Alkohol% a tinktúrában</th></tr>
+    <tr class="cat-row"><td colspan="5">BIZTONSÁGOS HOSSZÚ TÁVON</td></tr>
+    <tr><td>Citromfű</td><td>2–3 ml</td><td>9 ml</td><td>Korlátlan</td><td>40–50%</td></tr>
+    <tr><td>Kamilla</td><td>2–3 ml</td><td>9 ml</td><td>Korlátlan</td><td>40–50%</td></tr>
+    <tr><td>Levendula</td><td>1–3 ml</td><td>6 ml</td><td>Korlátlan</td><td>40–50%</td></tr>
+    <tr><td>Menta</td><td>1–2 ml</td><td>6 ml</td><td>Korlátlan</td><td>40–60%</td></tr>
+    <tr><td>Zsálya</td><td>2–3 ml</td><td>9 ml</td><td>Korlátlan</td><td>40–60%</td></tr>
+    <tr><td>Kakukkfű</td><td>2–4 ml</td><td>12 ml</td><td>Korlátlan</td><td>40–60%</td></tr>
+    <tr><td>Bodza (virág)</td><td>3–5 ml</td><td>15 ml</td><td>Korlátlan</td><td>40–50%</td></tr>
+    <tr><td>Pitypang gyökér</td><td>2–4 ml</td><td>12 ml</td><td>Korlátlan</td><td>40–60%</td></tr>
+    <tr class="cat-row"><td colspan="5">IDŐKORLÁTTAL (CIKLIKUSAN)</td></tr>
+    <tr><td>Echinacea</td><td>3–5 ml</td><td>15 ml</td><td>Max. 10 nap, utána 3 nap pihenő</td><td>40–60%</td></tr>
+    <tr><td>Fokhagyma</td><td>1–2 ml</td><td>4 ml</td><td>Max. 4 hét, utána szünet</td><td>40–60%</td></tr>
+    <tr><td>Orbáncfű</td><td>2–3 ml</td><td>9 ml</td><td>Min. 4 hét kúra (hatás lassú)</td><td>60%</td></tr>
+    <tr><td>Ashwagandha</td><td>3–5 ml</td><td>10 ml</td><td>2–3 hónapos kúra, utána szünet</td><td>40–60%</td></tr>
+    <tr><td>Mariatövis (mag)</td><td>3–5 ml</td><td>15 ml</td><td>4–8 hetes kúra</td><td>40–60%</td></tr>
+    <tr class="cat-row"><td colspan="5">PONTOS ADAGOLÁST IGÉNYEL</td></tr>
+    <tr><td>Macskagyökér</td><td>2–3 ml</td><td>5 ml lefekvés előtt</td><td>Max. 4–6 hét</td><td>40–60%</td></tr>
+    <tr><td>Kurkuma</td><td>3–4 ml</td><td>12 ml</td><td>2–4 hetes kúra</td><td>60%</td></tr>
+    <tr><td>Gyömbér</td><td>1–3 ml</td><td>9 ml</td><td>Korlátlan, ha jól tűri</td><td>40–60%</td></tr>
+    <tr><td>Bojtorján</td><td>2–3 ml</td><td>9 ml</td><td>6–8 hetes kúra</td><td>40–60%</td></tr>
+    <tr class="cat-row"><td colspan="5">CSAK TAPASZTALT FELHASZNÁLÓKNAK / ORVOSI FELÜGYELETTEL</td></tr>
+    <tr><td>Vérehulló fű</td><td>0,5 ml</td><td>1 ml</td><td>Csak orvos javaslatára</td><td>50–60%</td></tr>
+  </table>
+
+  <h2>⚠️ Gyógyszer-Kölcsönhatások (Kritikus Táblázat)</h2>
+
+  <div class="danger">
+    🚨 <strong>ORBÁNCFŰ (Hypericum perforatum) — TILTOTT KOMBINÁCIÓK:</strong> Antidepresszánsok (SSRI/SNRI), MAO-gátlók, vérhígítók (warfarin), fogamzásgátlók (csökkenti hatásukat!), HIV-vírusellenes szerek, immunszuppresszánsok (cyclosporin), triptánok (migrén), digoxin, teofyllin. Ez a legfontosabb interakciós szabály — az orbáncfű sok gyógyszer lebontását felgyorsítja!
+  </div>
+
+  <table>
+    <tr><th>Tinktúra</th><th>Tilos kombinálni</th><th>Óvatosan kombinálni</th></tr>
+    <tr><td><strong>Orbáncfű</strong></td><td class="danger-cell">Antidepresszánsok, vérhígítók, fogamzásgátlók, HIV-gyógyszerek, immunszuppresszánsok</td><td>Minden más gyógyszer — kérdezz orvost!</td></tr>
+    <tr><td><strong>Kurkuma</strong></td><td class="danger-cell">Vérhígítók (warfarin, aspirin nagy dózis), antitrombotikus szerek</td><td>NSAID fájdalomcsillapítók — hatáserősítés lehetséges</td></tr>
+    <tr><td><strong>Fokhagyma</strong></td><td class="danger-cell">Vérhígítók, warfarin, heparin</td><td>Vérnyomáscsökkentők — szinergikus hatás (orvosi OK kell)</td></tr>
+    <tr><td><strong>Gyömbér</strong></td><td class="danger-cell">Vérhígítók nagy dózisban</td><td>Vérnyomáscsökkentők, diabéteszes gyógyszerek</td></tr>
+    <tr><td><strong>Macskagyökér</strong></td><td class="danger-cell">Alkohol, benzodiazepinek, altatók, opioidok</td><td>Szorongáscsökkentők — potencírozás lehetséges</td></tr>
+    <tr><td><strong>Ashwagandha</strong></td><td class="danger-cell">Pajzsmirigy gyógyszerek (befolyásolhatja a T3/T4 szintet), immunszuppresszánsok</td><td>Szorongáscsökkentők, altatók</td></tr>
+    <tr><td><strong>Bodza (bogyó)</strong></td><td class="danger-cell">Immunszuppresszánsok (stimulálja az immunrendszert!)</td><td>Lázcsillapítók — hatáserősítés</td></tr>
+    <tr><td><strong>Echinacea</strong></td><td class="danger-cell">Immunszuppresszánsok, autoimmun betegség esetén óvatosan</td><td>Antibiotikumok — nem kontraindikált, de kérd orvos véleményét</td></tr>
+    <tr><td><strong>Vérehulló fű</strong></td><td class="danger-cell">Minden gyógyszerrel konzultálj orvossal! Erős enzim-induktor</td><td>—</td></tr>
+    <tr><td><strong>Mariatövis</strong></td><td>Általában biztonságos</td><td>Hepatotoxikus gyógyszerek — májtámogatóként használható mellette, de orvosi OK kell</td></tr>
+  </table>
+
+  <h2>👶 Gyerekek — Dózis és Korhatár</h2>
+
+  <div class="warning">⚠️ 2 éves kor alatt EGYETLEN tinktúrát sem szabad adni alkoholtartalom miatt. Kisgyerekeknél mindig gyermekorvossal konzultálj előbb!</div>
+
+  <table>
+    <tr><th>Növény</th><th>2–6 év</th><th>6–12 év</th><th>12–18 év</th><th>Megjegyzés</th></tr>
+    <tr><td>Citromfű</td><td class="safe">0,5 ml 1×</td><td class="safe">1 ml 2×</td><td class="safe">2 ml 3×</td><td>Biztonságos</td></tr>
+    <tr><td>Kamilla</td><td class="safe">0,5 ml 2×</td><td class="safe">1 ml 3×</td><td class="safe">2 ml 3×</td><td>Biztonságos</td></tr>
+    <tr><td>Levendula</td><td class="safe">0,5 ml 1×</td><td class="safe">1 ml 2×</td><td class="safe">2 ml 3×</td><td>Biztonságos</td></tr>
+    <tr><td>Echinacea</td><td class="caution">NEM ajánlott</td><td class="caution">0,5 ml 2× max 5 nap</td><td class="safe">2 ml 3× max 10 nap</td><td>Orvosi OK kell 6 év alatt</td></tr>
+    <tr><td>Bodza (virág)</td><td class="caution">0,5 ml 2×</td><td class="safe">1 ml 3×</td><td class="safe">3 ml 3×</td><td>Csak virágból, NEM bogyóból!</td></tr>
+    <tr><td>Fokhagyma</td><td class="caution">NEM ajánlott</td><td class="caution">0,5 ml 1×</td><td class="safe">1 ml 2×</td><td>Erős, óvatosan</td></tr>
+    <tr><td>Zsálya</td><td class="caution">NEM ajánlott</td><td class="caution">1 ml 2× (gargalizálva)</td><td class="safe">2 ml 3×</td><td>Torokfájásra gargalizálva OK</td></tr>
+    <tr><td>Orbáncfű</td><td class="danger-cell">TILOS</td><td class="danger-cell">TILOS</td><td class="caution">Orvosi felügyelettel</td><td>18 alatt kerülendő</td></tr>
+    <tr><td>Macskagyökér</td><td class="danger-cell">TILOS</td><td class="danger-cell">TILOS</td><td class="caution">Orvosi OK kell</td><td>18 alatt kerülendő</td></tr>
+    <tr><td>Kurkuma</td><td class="caution">NEM ajánlott</td><td class="caution">0,5 ml 1×</td><td class="safe">2 ml 2×</td><td>Fűszerként OK, tinktúra-óvatosan</td></tr>
+  </table>
+
+  <h2>🤰 Terhesség és Szoptatás</h2>
+
+  <div class="danger">
+    🚨 Terhesség alatt és szoptatás idején a legtöbb tinktúra alkalmazása KERÜLENDŐ, hacsak orvos nem engedélyezi. Az alkoholtartalom és egyes hatóanyagok átjutnak a méh-lepényen és az anyatejbe.
+  </div>
+
+  <table>
+    <tr><th>Tinktúra</th><th>Terhesség</th><th>Szoptatás</th><th>Megjegyzés</th></tr>
+    <tr><td>Citromfű</td><td class="safe">Általában biztonságos kis dózisban</td><td class="safe">Általában OK</td><td>Max. 1 ml 2× naponta</td></tr>
+    <tr><td>Kamilla</td><td class="caution">Mérsékelt dózis OK</td><td class="caution">Kis mennyiség OK</td><td>Nagy dózis méhösszehúzó</td></tr>
+    <tr><td>Zsálya</td><td class="danger-cell">KERÜLENDŐ</td><td class="danger-cell">KERÜLENDŐ</td><td>Méhösszehúzó, laktációt csökkenti</td></tr>
+    <tr><td>Orbáncfű</td><td class="danger-cell">TILOS</td><td class="danger-cell">TILOS</td><td>Sem terhesség, sem szoptatás alatt</td></tr>
+    <tr><td>Bodza</td><td class="danger-cell">KERÜLENDŐ</td><td class="danger-cell">KERÜLENDŐ</td><td>Nincs elég adat, biztonság ismeretlen</td></tr>
+    <tr><td>Fokhagyma</td><td class="caution">Kis dózis OK</td><td class="caution">Kis dózis OK</td><td>Az anyatej ízét megváltoztatja</td></tr>
+    <tr><td>Gyömbér</td><td class="safe">Hányingerre 1. trimeszterben OK</td><td class="safe">Általában OK</td><td>Max. 1 g/nap szárazanyag-egyenérték</td></tr>
+    <tr><td>Echinacea</td><td class="caution">Orvosi OK kell</td><td class="caution">Rövid ideig OK</td><td>Biztonságosnak tartják, de orvosi vélemény ajánlott</td></tr>
+    <tr><td>Levendula</td><td class="safe">Általában biztonságos</td><td class="safe">OK</td><td>Aromaterápiás célra külsőleg is</td></tr>
+    <tr><td>Macskagyökér</td><td class="danger-cell">TILOS</td><td class="danger-cell">TILOS</td><td>Állatkísérletekben magzati toxicitás</td></tr>
+    <tr><td>Ashwagandha</td><td class="danger-cell">TILOS</td><td class="danger-cell">KERÜLENDŐ</td><td>Méhösszehúzó hatás, vetélés kockázata</td></tr>
+    <tr><td>Kurkuma</td><td class="caution">Kis dózis OK</td><td class="safe">OK</td><td>Nagy dózis méhösszehúzó</td></tr>
+  </table>
+
+  <h2>👴 Idősek (65+) — Különleges Szempontok</h2>
+
+  <table>
+    <tr><th>Szempont</th><th>Javaslat</th></tr>
+    <tr><td>Általános dózis-elv</td><td>Kezdd a standard dózis FELÉVEL (pl. 1,5 ml ha a standard 3 ml). Ha 1 hét után nincs mellékhatás, emeld a teljes adagra.</td></tr>
+    <tr><td>Alkohol-tartalom</td><td>Idősebbeknél az alkohol-érzékenység nő. Hígítsd 50 ml vízzel. Ha vesebetegség vagy máj-probléma van, orvosi OK kötelező.</td></tr>
+    <tr><td>Vérnyomáscsökkentők mellé</td><td>Fokhagyma és gyömbér fokozhatja a hatást — dózis-csökkentés szükséges lehet. Orvosi konzultáció.</td></tr>
+    <tr><td>Vérhígítók mellé (warfarin)</td><td>Orbáncfű, kurkuma, fokhagyma, gyömbér TILOS. Ezek befolyásolják az INR-értéket.</td></tr>
+    <tr><td>Altatók, benzodiazepinek mellé</td><td>Macskagyökér potencírozhatja — ha szedel ilyen gyógyszereket, kihagyja a macskagyökeret.</td></tr>
+    <tr><td>Vesebetegség esetén</td><td>Csökkentett folyadékbevitel esetén fokozottan figyeld a méregtelenítési protokollt — a magas folyadékigény gond lehet.</td></tr>
+  </table>
+
+  <h2>🩺 Allergiás Reakciók — Mit Keres?</h2>
+
+  <table>
+    <tr><th>Tinktúra</th><th>Lehetséges allergia / keresztreakció</th></tr>
+    <tr><td>Kamilla, Bodza, Orbáncfű</td><td>Fészkesvirágzatúak (Asteraceae) allergiásoknál — ha fűre, parlagfűre vagy margarétra allergiás vagy, óvatosan!</td></tr>
+    <tr><td>Fokhagyma</td><td>Liliomsülyfélék (Alliaceae) allergiásoknál — fokhagyma-hagymaallergia</td></tr>
+    <tr><td>Levendula</td><td>Ajakosvirágzatúak (Lamiaceae) allergiásoknál ritka, de előfordulhat</td></tr>
+    <tr><td>Zsálya, Kakukkfű, Menta</td><td>Szintén Lamiaceae — ha egyikre allergiás vagy, a többire is érdemes óvatosan</td></tr>
+  </table>
+
+  <div class="tip-box">
+    <strong>Tesztelési módszer:</strong> Minden új tinktúra első alkalmazásakor: 3–5 csepp a belső alkarba kenve, majd 15 percig figyeld a bőrt. Ha vörösödés, duzzanat vagy viszketés jelenik meg, ne szedd belőle.
+  </div>
+
+  <h2>📐 Dózis Összefoglalás — Gyors Referencia</h2>
+
+  <div class="dose-box">
+    <h3>Citromfű</h3>
+    <div class="dose-grid">
+      <div class="dose-item"><strong>Felnőtt / adag</strong><span class="val">2–3 ml</span></div>
+      <div class="dose-item"><strong>Napi max.</strong><span class="val">9 ml</span></div>
+      <div class="dose-item"><strong>Gyerek (6–12)</strong><span class="val">1 ml 2×</span></div>
+    </div>
+  </div>
+  <div class="dose-box">
+    <h3>Echinacea</h3>
+    <div class="dose-grid">
+      <div class="dose-item"><strong>Felnőtt / adag</strong><span class="val">3–5 ml</span></div>
+      <div class="dose-item"><strong>Napi max.</strong><span class="val">15 ml</span></div>
+      <div class="dose-item"><strong>Max. kúra</strong><span class="val">10 nap</span></div>
+    </div>
+  </div>
+  <div class="dose-box">
+    <h3>Macskagyökér</h3>
+    <div class="dose-grid">
+      <div class="dose-item"><strong>Felnőtt / este</strong><span class="val">2–5 ml</span></div>
+      <div class="dose-item"><strong>Max. kúra</strong><span class="val">4–6 hét</span></div>
+      <div class="dose-item"><strong>Gyerek</strong><span class="val">TILOS</span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>🛡️ Dózis és Biztonsági Útmutató — OB1</p>
+    <p style="margin-top:8px;font-size:12px;">Ez az útmutató tájékoztató jellegű, nem helyettesíti az orvosi tanácsadást. Következő lépés →</p>
+  </div>
+
+</div>
+</body>
+</html>
